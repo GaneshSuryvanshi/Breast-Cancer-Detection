@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+    <style>
+        body {
+          background-image: url("{% static 'image/home_page.jpg' %}");
+         /* Background image is centered vertically and horizontally at all times */ 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-size: cover; 
+            background-color: #464646; 
+        }
+        p{
+            text-align:center;
+            font-size: 50px;
+            color:black;
+        }
+        a,h1{
+            text-align:center;
+            font-size: 90px;
+            color:green;
+            text-decoration:none;
+        }
+        button{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+          button:hover {
+            background-color: red; /* Green */
+            color: white;
+        
+        </style>
+</head>
+<body>
+    <p>Breast Cancer Detection System!</p>
+    <br><br><br>
+    <a href="input"><p class="button"><button id="myButton" class="float-left submit-button" >Check Cancer</button></p></a>
+</body>
+</html>
